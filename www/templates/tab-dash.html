@@ -1,0 +1,19 @@
+<ion-view view-title="Dashboard">
+  <ion-content class="padding">
+      <ion-refresher on-refresh="doRefresh()">
+      </ion-refresher>
+    <div class="card" ng-repeat="item in employees">
+      <div class="item item-divider">
+        {{item.name}}
+      </div>
+      <div class="item item-text-wrap">
+        <h3>{{item.company}}</h3>
+        <p>{{item.icNo}}</p>
+      </div>
+      
+    </div>
+    <div class="padding">
+      <div class="button button-positive" ng-click="btnpress()">Load</div>
+    </div>
+  </ion-content>
+</ion-view>

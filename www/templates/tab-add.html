@@ -1,0 +1,29 @@
+<ion-view view-title="Add New">
+  <ion-content>
+    <div class="list">
+      <label class="item item-input">
+        <span class="input-label">Name</span>
+        <input type="text" ng-model="$parent.name">
+      </label>
+      <label class="item item-input item-select">
+        <div class="input-label">
+          Company
+        </div>
+        <select ng-model="$parent.company">
+          <option value="">---Please Select---</option>
+          <option value="BNM">BNM</option>
+          <option value="KWSP">KWSP</option>
+          <option value="Maybank">Maybank</option>
+          <option value="Petronas">Petronas</option>
+        </select>
+      </label>
+      <label class="item item-input">
+        <span class="input-label">IC Number</span>
+        <input type="text" ng-model="$parent.icNo">
+      </label>
+    </div>
+    <div class="padding">
+        <button class="button button-block button-default" ng-click="addToSQLite()">Add New Employee</button>
+    </div>
+  </ion-content>
+</ion-view>
